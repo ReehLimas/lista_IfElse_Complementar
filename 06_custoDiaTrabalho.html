@@ -13,11 +13,11 @@
     
     Apresente em tela o cargo do usuário e também o valor final recebido pelas viagens realizadas.
     */
-
     // Entrada
-    
+    const viagensDia = Number(`Informe quantas viagens foram realizadas por dia:`);
+    const cargo = prompt(`Informe seu cargo:`);
     // Processamento
-
+    (cargo == "motorista" && viagensDia == 10) ? alert(`haverá um adicional de ${100 * 20/100} reais.`) :  (cargo == "motorista" && viagensDia > 10) ? alert(`haverá um adicional de ${100 * 35/100} reais.`) :  (cargo == "cobrador" && viagensDia == 10) ? alert(`Não haverá adicional.`) : (cargo == "cobrador" && viagensDia > 10) ? alert(`Haverá um aumento de ${100 * 10/100} reais.`) : alert(`Valor inválido!`);
     // Saída
 
 </script>

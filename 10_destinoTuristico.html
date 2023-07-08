@@ -12,9 +12,15 @@
     */
 
     // Entrada
-    
+const sp = Number(prompt(`Informe o valor do transporte aério para SP:`).replace(",",","));
+const rj = Number(prompt(`Informe o valor do transporte aério para RJ:`).replace(",","."));
+const hotelSp = Number(prompt(`Informe o valor do Hotel em SP:`).replace(",",","));
+const hotelRj = Number(prompt(`Informe o valor do Hotel em RJ:`).replace(",","."));
+
     // Processamento
+const totalSp = (sp + sp + hotelSp);
+const totalRj = (rj + rj + hotelRj);
 
     // Saída
-
+(totalRj > totalSp) ? alert(`Valor mais baixo SP sendo ${totalSp} reais`) : alert(`Valor mais baixo RJ sendo ${totalRj} reais.`)
 </script>

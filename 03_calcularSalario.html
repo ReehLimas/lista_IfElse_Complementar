@@ -3,21 +3,22 @@
     // Problema: Reajuste de salário
     /*
     Faça um script que peça para o usuário informar o valor do seu salário.
-    
     O script deverá calcular e mostrar o valor do aumento e o valor do novo salário.
-    
     - Considere que, caso seu salário seja menor ou igual a R$ 2.000,00 o reajuste será de 15%.
     - Caso seja maior que R$ 2.000,00 o reajuste será de 10%.
     - Ainda, sendo maior que R$ 4.000,00 o reajuste será de 7,5%.
     - Por fim, caso seja maior que R$ 7.000,00 o reajuste será de 5%.
-    
     Calcule e apresente o salário final de acordo com o reajuste obtido.
     */
 
     // Entrada
-    
+    const salario = Number(prompt(`Informe o valor do seu salário:`).replace(",","."));
     // Processamento
-
+    const reajuste15 = (salario + salario * 15/100);
+    const reajuste10 = (salario + salario * 10/100);
+    const reajuste7 = (salario + salario * 7.5/100);
+    const reajuste5 = (salario + salario * 5/100);
     // Saída
+    (salario <= 2000) ? alert(`Seu salário foi reajustado para ${reajuste15}`) : (salario > 2000) ? alert(`Seu salário foi reajustado para ${reajuste10}`) : (salario >= 4000) ? alert(`Seu salário foi reajustado para ${reajuste7}`) : (salario >= 7000) ? alert(`Seu salário foi reajustado para ${reajuste5}`) : alert(`Valor invalido!`);
 
 </script>

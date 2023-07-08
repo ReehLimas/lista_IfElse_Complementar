@@ -10,9 +10,14 @@
     */
 
     // Entrada
+    const valorImovel = Number(prompt(`Informe o valor do imovel:`).replace(",","."));
+    const financiamento = Number(prompt(`Informe em quantos anos será realizado o financiamento:`).replace(",","."));
+    const salario = Number(prompt(`Informe o seu salario:`).replace(",","."));
     
     // Processamento
+    const menosPorcento = (valorImovel / salario - salario * 30/100);
+    const valorMensal  = (valorImovel * financiamento) / salario;
 
     // Saída
-
+    (salario <= menosPorcento) ? alert(`Seu financeamento foi negado.`) : (salario > menosPorcento) ? alert(`Seu financiamento foi aceito, sua parcela é de ${valorMensal} reais.`) : alert(`Valor invalido!`);
 </script>

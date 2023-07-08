@@ -19,9 +19,16 @@
     */
 
     // Entrada
-    
+    const carreira = Number(prompt(`Informe quantos anos de carreira teve:`).replace(",","."));
+    const quantiaProjetos = Number(prompt(`Informe quantos projetos de pesquisa já coordenou:`));
+    const orientou = Number(prompt(`Informe a quantidade de projetos que já orientou:`));
+    const tccs = Number(prompt(`Informe a quantidade de TCCS que já orientou:`));
     // Processamento
-
+    const anos = (carreira * 2.5)
+    const projetos = (quantiaProjetos * 5);
+    const extensão = (orientou * 5);
+    const tcc = (tccs * 3);
+    const totalPontos = (anos + projetos + extensão + tcc)
     // Saída
-
+    (totalPontos = 30) ? alert(`Convidado`) : (totalPontos <= 50) ? alert(`Agregado`) : (totalPontos > 50) ? alert(`Títular`) : alert(`Valor inválido!`);
 </script>

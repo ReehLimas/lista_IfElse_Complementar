@@ -12,9 +12,10 @@
     */
 
     // Entrada
-    
+    const valor = Number(prompt(`Informe o valor do computador:`).replace(",","."));
+    const formaPagar = prompt(`Informe a forma de pagamento, sando D-Dinheiro || B-Boleto || P-Pix`);
     // Processamento
-
+    (formaPagar == "B") ? alert(`O preço ficará ${valor - valor * 3/100} reais.`) : (formaPagar == "D") ? alert(`O valor a ser pago será ${valor - valor * 5/100} reais`) : (formaPagar == "P") ? alert(`O valor a ser pago será ${valor - valor * 10/100} reais`) : alert(`Valor inválido`);
     // Saída
 
 </script>

@@ -11,9 +11,10 @@
     */
 
     // Entrada
-    
+    const distancia = Number(prompt(`Informe a distância da viagem:`).replace(",","."));
+    const km = Number(prompt(`Quantos km pretende viajar por dia?`).replace(",","."));
     // Processamento
-
+    const dias = (km / distancia * 24);
     // Saída
-
+    (dias <= 3)? alert(`Poderá ser realizada em qualquer período. `) : (dias <= 10) ? alert(`Férias de julho`) : (dias <=20) ? alert(`Férias de verão.`) : alert(`Deverá trabalhar remoto.`);
 </script>

@@ -10,9 +10,9 @@
     */
 
     // Entrada
-    
+    const celsius = Number(prompt(`Informe a temperatura em graus Celsius:`).trim().replace(",",".")); 
     // Processamento
-
+    (celsius < 100) ? alert(`A temperatura está muito baixa`) : (celsius <= 200) ? alert(`A temperatura está baixa!`) : (celsius >200 && celsius <= 500) ? alert(`A temperatura está normal!`) : (celsius > 500) ? alert(`A temperatura está muito alta!`) : alert(`Valor invalido!`);
     // Saída
 
 </script>

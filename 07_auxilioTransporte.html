@@ -12,9 +12,11 @@
     */
 
     // Entrada
-    
+    const salario = Number(prompt(`Informe seu salário por mês;`).replace(",","."));
+    const pergunta = prompt(`Você deseja receber auxilio transporte? Sendo S-Sim || N-Não:`);
+    const pergunta2 = prompt(`Você ultiliza veículo próprio? Sendo S-Sim || N-Não`);
     // Processamento
-
+    (pergunta == "S" && pergunta2 == "S") ? alert(`Serão descontados 6% do seu salário, ficando ${salario - salario * 6/100} reais.`) : (pergunta2 == "S") ? alert(`Serão descontados 6% do seu salário, e adicionando 200 reais ficando ${salario - salario * 6/100 + 200} reais.`) : (pergunta == "S") ? alert(`Serão descontados 6% do seu salário, adicionando 150 reais ficando ${salario - salario * 6/100 + 150} reais.`) : alert(`Valor inválido!`);
     // Saída
 
 </script>
